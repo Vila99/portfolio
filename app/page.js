@@ -2,8 +2,8 @@ import MainPage from "./components/MainPage"
 import Content from "./components/ContentPage"
 
 export const metadata = {
-  title: 'My App',
-  description: 'Welcome to my app',
+  title: 'Portfolio',
+  description: 'Welcome to my portfolio',
 }
 
 export default async function Home() {
