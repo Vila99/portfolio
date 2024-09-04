@@ -123,19 +123,51 @@ body {
 }
 
 [data-theme='dark'] .bg-main{
-  background: rgb(238,174,202);
+  color: #000;
+  background: #fff;
   background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(0,0,0,) 33%);
 }
 
 [data-theme='dark'] a, [data-theme='dark'] a.nav-link.active{
-  color: #ffffff;
+  color: #000!important;
 }
 
 [data-theme='dark'] .nav-link {
-  color: #ffffff; /* Cambia el color a negro */
+  color: #000; /* Cambia el color a negro */
 }
 
-[data-theme='dark'] .bg-blanco{
-  background: rgba(238,174,202,1); /* Cambia el color a negro */
+[data-theme='dark'] .text-white{
+  background: #fff; /* Cambia el color a negro */
+  color: #000!important;
+}
+
+[data-theme='dark'] .btn-download{
+  background: #fff; /* Cambia el color a negro */
   color: #1c1c1c;
+  border: 2px solid #000; /* Línea blanca como borde */
+}
+
+[data-theme='dark'] .btn-download:hover{
+  background: #000; /* Cambia el color a negro */
+  color: #fff;
+}
+
+[data-theme='dark'] .btn-icon{
+  color: #000!important;
+}
+
+[data-theme='dark'] .fw-light{
+  color: #000!important;
+}
+
+[data-theme='dark'] .navbar-nav, [data-theme='dark'] .nav-link::after{
+  background-color: #000!important;
+}
+
+[data-theme='dark'] .border-hover{
+  border-color: #000!important;
+}
+
+[data-theme='dark'] .border-top, [data-theme='dark'] .border-bottom{
+  border-color: #000!important;
 }

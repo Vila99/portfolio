@@ -37,7 +37,7 @@ const BootstrapStyledTimeline = () => {
     return (
         <div className="row">
             <div className="col-12 col-lg-6 ">
-                <div className="card bg-transparent pt-5 border-none" style={{maxWidth: '600px'}}>
+                <div className="card bg-transparent pt-5 border-none" style={{maxWidth: '600px', border:'none'}}>
                     <h3 className='text-center text-light pb-4 fw-light'>Mis estudios</h3>
                     <Timeline 
                         value={events} 

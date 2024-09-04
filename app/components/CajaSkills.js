@@ -5,7 +5,7 @@ import { SiMysql, SiTailwindcss, SiTypescript } from 'react-icons/si';
 
 const Cajaskills = ({ title, icons }) => {
   return (
-    <Card sx={{ 
+    <Card className="border-hover"sx={{ 
       position: 'relative',
       border: '2px solid white',
       borderRadius: '8px',
@@ -19,12 +19,12 @@ const Cajaskills = ({ title, icons }) => {
       },
     }}>
       <CardContent>
-        <Typography variant="h5" component="div" sx={{ marginBottom: '16px', color: 'white' }}>
+        <Typography variant="h5" component="div" className="text-white" sx={{ marginBottom: '16px', color: 'white' }}>
           {title}
         </Typography>
         <Box sx={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
           {icons.map((Icon, index) => (
-            <Icon key={index} style={{ fontSize: '40px', color: 'white' }} />
+            <Icon key={index} className="text-white" style={{ fontSize: '40px', color: 'white' }} />
           ))}
         </Box>
       </CardContent>
