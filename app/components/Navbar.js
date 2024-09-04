@@ -2,6 +2,8 @@
 
 import { useEffect } from 'react';
 import SwitchClient from './SwitchClient';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const Navbar = () => {
   useEffect(() => {
@@ -32,6 +34,15 @@ const Navbar = () => {
     };
   }, []);
 
+  const handleNavLinkClick = () => {
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+
+    if (navbarCollapse.classList.contains('show')) {
+      navbarToggler.click();
+    }
+  };
+
   return (
     <nav className="navbar navbar-expand-lg fixed-top bg-main">
       <div className="container">
@@ -49,29 +60,29 @@ const Navbar = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarResponsive">
+        <div className="collapse navbar-collapse justify-content-end" id="navbarResponsive">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item bg-main">
-              <a className="nav-link text-white" href="#sobre-mi">
+              <a className="nav-link text-white" href="#sobre-mi" onClick={handleNavLinkClick}>
                 SOBRE MÍ
               </a>
             </li>
             <li className="nav-item bg-main">
-              <a className="nav-link text-white" href="#proyectos">
+              <a className="nav-link text-white" href="#proyectos" onClick={handleNavLinkClick}>
                 PROYECTOS
               </a>
             </li>
             <li className="nav-item bg-main">
-              <a className="nav-link text-white" href="#skills">
+              <a className="nav-link text-white" href="#skills" onClick={handleNavLinkClick}>
                 SKILLS
               </a>
             </li>
             <li className="nav-item bg-main">
-              <a className="nav-link text-white" href="#contacto">
+              <a className="nav-link text-white" href="#contacto" onClick={handleNavLinkClick}>
                 CONTACTO
               </a>
             </li>
-            <SwitchClient/>
+            <SwitchClient />
           </ul>
         </div>
       </div>

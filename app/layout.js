@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,7 +22,8 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet"
         />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>      </head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossOrigin="anonymous"/>
+        </head>
       <body className={inter.className}>
         <ThemeProviderClient>
           {/* NAVBAR FIXED */}
@@ -35,24 +36,29 @@ export default function RootLayout({ children }) {
               © 2024 Vila99, Inc
             </p>
             <a
-              href="/"
+              href="#"
               className="col-12 col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none text-white text-center"
             >
               GV2024
             </a>
             <ul className="nav col-12 col-md-4 justify-content-center justify-content-md-end">
               <li className="nav-item">
-                <a href="#" className="nav-link px-2 text-white">
+                <a href="#sobre-mi" className="nav-link px-2 text-white">
                   Sobre mí
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link px-2 text-white">
+                <a href="#proyectos" className="nav-link px-2 text-white">
                   Proyectos
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link px-2 text-white pe-3 pe-md-5">
+                <a href="#skills" className="nav-link px-2 text-white">
+                  Skills
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#contacto" className="nav-link px-2 text-white pe-3 pe-md-5">
                   Contacto
                 </a>
               </li>
