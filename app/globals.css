@@ -3,6 +3,9 @@
 @import 'primereact/resources/primereact.min.css';
 @import 'primeicons/primeicons.css';
 
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+
 
 
 body {
@@ -36,6 +39,13 @@ body {
   font-size: 100px;
 }
 
+.titulo-main1 {
+  font-size: 100px;
+  font-family: "Pixelify sans", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
 .navbar ul {
   list-style: none;
   display: flex;
@@ -43,15 +53,36 @@ body {
   padding: 0;
 }
 
-.navbar li a {
-  text-decoration: none;
-  padding: 10px 20px;
-  display: inline-block;
+.navbar-nav .nav-item {
+  position: relative;
 }
 
-.navbar li.active a {
-  border-bottom: 2px solid #fff; /* Línea debajo del enlace activo */
+.navbar-nav .nav-link {
+  text-decoration: none;
+  position: relative;
+  display: inline-block; /* Ensure it wraps around the text */
 }
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease, left 0.3s ease;
+  transform: translateX(0%);
+}
+
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+  left: 0;
+}
+
+
+
+
 
 .btn-download {
   display: inline-block;
@@ -80,4 +111,31 @@ body {
   background-color: transparent; /* Fondo transparente */
   border: 2px solid white; /* Línea blanca como borde */
   border-radius: 22px; /* Bordes redondeados */
+}
+
+
+/* TEMA OSCURO Y CLARO */
+
+[data-theme='dark'] .bg-multicolor{
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(0,0,0,) 33%);
+  color: #ffffff;
+}
+
+[data-theme='dark'] .bg-main{
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(0,0,0,) 33%);
+}
+
+[data-theme='dark'] a, [data-theme='dark'] a.nav-link.active{
+  color: #ffffff;
+}
+
+[data-theme='dark'] .nav-link {
+  color: #ffffff; /* Cambia el color a negro */
+}
+
+[data-theme='dark'] .bg-blanco{
+  background: rgba(238,174,202,1); /* Cambia el color a negro */
+  color: #1c1c1c;
 }

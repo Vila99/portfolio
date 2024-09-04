@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/Navbar"
+import ThemeProviderClient from './provider/ThemeProviderClient'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,44 +30,9 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={inter.className}>
+        <ThemeProviderClient>
         {/* NAVBAR FIXED */}
-        <nav className="navbar navbar-expand-lg fixed-top bg-main">
-          <div className="container">
-            <a className="navbar-brand fs-3 text-white" href="#">
-              ./GV2024
-            </a>
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarResponsive"
-              aria-controls="navbarResponsive"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarResponsive">
-              <ul className="navbar-nav ms-auto">
-                <li className="nav-item active">
-                  <a className="nav-link text-white" href="#sobre-mi">
-                    SOBRE MÍ
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link text-white" href="#proyectos">
-                    PROYECTOS
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link text-white" href="#contacto">
-                    CONTACTO
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+        <Navbar/>
 
         {children}
 
@@ -97,6 +64,7 @@ export default function RootLayout({ children }) {
             </li>
           </ul>
         </footer>
+        </ThemeProviderClient>
 
         {/* Bootstrap JS and dependencies (Popper.js) */}
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>

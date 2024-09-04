@@ -36,7 +36,7 @@ const MainComponent = () => {
               Frontend Developer.
             </p>
             <p className="lead fs-4">
-              "Always learning and improving to be able to create better web designs."
+              "Always learning and improving to create better web designs."
             </p>
             <BotonCV/>
           </div>
