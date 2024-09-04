@@ -1,3 +1,10 @@
+/* En globals.css o en tu archivo CSS principal */
+@import 'primereact/resources/themes/saga-blue/theme.css'; /* Elige el tema que prefieras */
+@import 'primereact/resources/primereact.min.css';
+@import 'primeicons/primeicons.css';
+
+
+
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
@@ -44,4 +51,33 @@ body {
 
 .navbar li.active a {
   border-bottom: 2px solid #fff; /* Línea debajo del enlace activo */
+}
+
+.btn-download {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white; /* Color del texto */
+  background-color: transparent; /* Fondo transparente */
+  border: 2px solid white; /* Línea blanca como borde */
+  border-radius: 22px; /* Bordes redondeados */
+  text-decoration: none; /* Sin subrayado en el texto */
+  text-align: center; /* Alinear el texto al centro */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.btn-download:hover {
+  background-color: white; /* Fondo blanco al hacer hover */
+  color: black; /* Cambiar color del texto al hacer hover */
+}
+
+.btn-icon {
+  font-size: 25px; /* Tamaño del icono */
+  margin-bottom: 4px;
+}
+
+.contact-box{
+  color: white; /* Color del texto */
+  background-color: transparent; /* Fondo transparente */
+  border: 2px solid white; /* Línea blanca como borde */
+  border-radius: 22px; /* Bordes redondeados */
 }

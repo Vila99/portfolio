@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import Typewriter from 'typewriter-effect';
+import BotonCV from './BotonCV'
 
 const MainComponent = () => {
   const [isClient, setIsClient] = useState(false);
@@ -37,6 +38,7 @@ const MainComponent = () => {
             <p className="lead fs-4">
               "Always learning and improving to be able to create better web designs."
             </p>
+            <BotonCV/>
           </div>
         </div>
       </div>
