@@ -2,8 +2,7 @@
 
 import { useEffect } from 'react';
 import SwitchClient from './SwitchClient';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import Link from 'next/link';
 
 const Navbar = () => {
   useEffect(() => {
@@ -32,7 +31,7 @@ const Navbar = () => {
     return () => {
       window.removeEventListener('scroll', updateActiveLink);
     };
-  }, []); // Dependencias vacías para ejecutar solo al montar
+  }, []); 
 
   const handleNavLinkClick = () => {
     const navbarToggler = document.querySelector('.navbar-toggler');
@@ -48,9 +47,9 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg fixed-top bg-main">
       <div className="container">
-        <a className="navbar-brand fs-3 text-white" href="#">
+        <Link href="/" className="navbar-brand fs-3 text-white">
           ./GV2024
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -65,24 +64,24 @@ const Navbar = () => {
         <div className="collapse navbar-collapse justify-content-end" id="navbarResponsive">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item bg-main">
-              <a className="nav-link text-white" href="#sobre-mi" onClick={handleNavLinkClick}>
+              <Link href="#sobre-mi" className="nav-link text-white" onClick={handleNavLinkClick}>
                 SOBRE MÍ
-              </a>
+              </Link>
             </li>
             <li className="nav-item bg-main">
-              <a className="nav-link text-white" href="#proyectos" onClick={handleNavLinkClick}>
+              <Link href="#proyectos" className="nav-link text-white" onClick={handleNavLinkClick}>
                 PROYECTOS
-              </a>
+              </Link>
             </li>
             <li className="nav-item bg-main">
-              <a className="nav-link text-white" href="#skills" onClick={handleNavLinkClick}>
+              <Link href="#skills" className="nav-link text-white" onClick={handleNavLinkClick}>
                 SKILLS
-              </a>
+              </Link>
             </li>
             <li className="nav-item bg-main">
-              <a className="nav-link text-white" href="#contacto" onClick={handleNavLinkClick}>
+              <Link href="#contacto" className="nav-link text-white" onClick={handleNavLinkClick}>
                 CONTACTO
-              </a>
+              </Link>
             </li>
             <SwitchClient />
           </ul>

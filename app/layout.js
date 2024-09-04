@@ -3,6 +3,7 @@ import './globals.css';
 import Navbar from './components/Navbar';
 import ThemeProviderClient from './provider/ThemeProviderClient';
 import Script from 'next/script';
+
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
@@ -22,15 +23,17 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet"
         />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossOrigin="anonymous"/>
-        </head>
+        <link 
+          rel="stylesheet" 
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+          crossOrigin="anonymous"
+        />
+      </head>
       <body className={inter.className}>
         <ThemeProviderClient>
-          {/* NAVBAR FIXED */}
           <Navbar />
-
-          {children}
-
+          <main>{children}</main>
           <footer className="d-flex flex-wrap justify-content-between align-items-center border-top px-3 py-2 bg-main py-3">
             <p className="col-12 col-md-4 mb-0 text-white ps-3 ps-md-5 text-center text-md-start">
               © 2024 Vila99, Inc
@@ -65,8 +68,7 @@ export default function RootLayout({ children }) {
             </ul>
           </footer>
         </ThemeProviderClient>
-
-        {/* Cargar scripts de manera asíncrona con next/script */}
+        
         <Script
           src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
           strategy="lazyOnload"

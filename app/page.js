@@ -1,13 +1,16 @@
-import MainPage from "./components/MainPage.js"
+import MainPage from "./components/MainPage"
 import Content from "./components/ContentPage"
-import React from "react";
-import "./globals.css"
 
-export default function Home() {
+export const metadata = {
+  title: 'My App',
+  description: 'Welcome to my app',
+}
+
+export default async function Home() {
   return (
-    <div className="bg-main">
-      <MainPage/>
-      <Content/>
-    </div>
-  );
+    <main className="bg-main">
+      <MainPage />
+      <Content />
+    </main>
+  )
 }
