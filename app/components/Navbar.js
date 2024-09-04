@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { useEffect } from 'react';
 import SwitchClient from './SwitchClient';
@@ -10,7 +10,7 @@ const Navbar = () => {
     const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 
     const updateActiveLink = () => {
-      let scrollPosition = window.scrollY + window.innerHeight / 2;
+      const scrollPosition = window.scrollY + window.innerHeight / 2;
 
       navLinks.forEach(link => {
         const section = document.querySelector(link.getAttribute('href'));
@@ -32,14 +32,16 @@ const Navbar = () => {
     return () => {
       window.removeEventListener('scroll', updateActiveLink);
     };
-  }, []);
+  }, []); // Dependencias vacías para ejecutar solo al montar
 
   const handleNavLinkClick = () => {
     const navbarToggler = document.querySelector('.navbar-toggler');
     const navbarCollapse = document.querySelector('.navbar-collapse');
 
-    if (navbarCollapse.classList.contains('show')) {
-      navbarToggler.click();
+    if (navbarCollapse && navbarToggler) {
+      if (navbarCollapse.classList.contains('show')) {
+        navbarToggler.click();
+      }
     }
   };
 
