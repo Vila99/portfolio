@@ -19,7 +19,7 @@ export default function SwitchClient(){
 
 
     return(
-        <div className="form-check form-switch ms-2 align-content-center mt-1">
+        <div className="form-check form-switch ps-5 align-content-center pt-1 bg-main">
             <input
             className="form-check-input"
             type="checkbox"

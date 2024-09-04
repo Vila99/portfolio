@@ -51,22 +51,22 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
+            <li className="nav-item bg-main">
               <a className="nav-link text-white" href="#sobre-mi">
                 SOBRE MÍ
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item bg-main">
               <a className="nav-link text-white" href="#proyectos">
                 PROYECTOS
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item bg-main">
               <a className="nav-link text-white" href="#skills">
                 SKILLS
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item bg-main">
               <a className="nav-link text-white" href="#contacto">
                 CONTACTO
               </a>
