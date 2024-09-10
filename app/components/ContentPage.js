@@ -44,12 +44,12 @@ const ContentComponent = () => {
 
 
       <div id="contacto" className="container section-container mt-5 border-top contacto-h">
-        <h1 className="fw-b section-title pt-5">CONTACTO.</h1>
+        <h1 className="fw-b section-title pt-5 mt-4">CONTACTO.</h1>
         <div className="container mx-auto">
         <p className="mb-8 pt-3 fs-5 lead">
           Si estás interesado o tienes cualquier pregunta, no dudes en ponerte en contacto conmigo!
         </p>
-        <div className="flex justify-center pb-5 pt-3 text-center">
+        <div className="flex justify-center mb-5 pb-5 pt-3 text-center">
           <ContactForm />
         </div>
       </div>

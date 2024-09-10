@@ -61,6 +61,11 @@ export default function RootLayout({ children }) {
                 </a>
               </li>
               <li className="nav-item">
+                <a href="#certificados" className="nav-link px-2 text-white">
+                  Certificados
+                </a>
+              </li>
+              <li className="nav-item">
                 <a href="#contacto" className="nav-link px-2 text-white pe-3 pe-md-5">
                   Contacto
                 </a>

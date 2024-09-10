@@ -51,7 +51,7 @@ const Navbar = () => {
         <Link href="/" className="navbar-brand fs-3 text-white">
           ./GV2024
         </Link>
-        
+
         <div>
           <a href='https://github.com/Vila99' target='_blank' rel='noopener noreferrer'>
             <SiGithub className='btn-icon' style={{ fontSize: 35, color: '#fff' }} />
@@ -87,6 +87,11 @@ const Navbar = () => {
             <li className="nav-item bg-main">
               <Link href="#skills" className="nav-link text-white" onClick={handleNavLinkClick}>
                 SKILLS
+              </Link>
+            </li>
+            <li className="nav-item bg-main">
+              <Link href="#certificados" className="nav-link text-white" onClick={handleNavLinkClick}>
+                CERTIFICADOS
               </Link>
             </li>
             <li className="nav-item bg-main">
