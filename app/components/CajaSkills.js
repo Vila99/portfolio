@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardContent, Typography, Box } from '@mui/material';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap, FaPython } from 'react-icons/fa';
-import { SiMysql, SiTailwindcss, SiTypescript } from 'react-icons/si';
+import { SiMysql, SiTailwindcss, SiTypescript, SiGithub, SiVisualstudiocode, SiNextdotjs } from 'react-icons/si';
 
 const Cajaskills = ({ title, icons }) => {
   return (
@@ -32,18 +32,29 @@ const Cajaskills = ({ title, icons }) => {
   );
 };
 
+// Responsive para movil?
 const SkillsSection = () => {
   return (
-    <div style={{ display: 'flex', gap: '16px' }}>
+    <div className="row g-4" style={{ display: 'flex', gap: '30px' }}>
+      <div className="col-12 col-sm-6 col-lg-5">
       <Cajaskills 
         title="Frontend" 
         icons={[FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap]} 
       />
+      </div>
+      <div className="col-12 col-sm-6 col-lg-5">
+      <Cajaskills 
+        title="Tecnologías" 
+        icons={[SiGithub, SiVisualstudiocode, SiNextdotjs]} 
+      />
+      </div>
+      <div className="col-12 col-sm-6 col-lg-5">
       <Cajaskills 
         title="Aprendiendo" 
         icons={[FaPython, SiMysql, SiTailwindcss, SiTypescript]} 
       />
-    </div>
+      </div>
+      </div>
   );
 };
 

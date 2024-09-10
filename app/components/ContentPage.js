@@ -5,6 +5,7 @@ import ProjectBox from './Proyectos'
 import SobreMi from './SobreMi'
 import ContactForm from '../components/ContactForm';
 import CajaSkills from '../components/CajaSkills';
+import Certificates from './Certificados';
 
 const ContentComponent = () => {
   return (
@@ -28,6 +29,18 @@ const ContentComponent = () => {
           <CajaSkills/>
         </div>
       </div>
+
+
+
+
+    {/* CERTIFICADOS */}
+      <div id='certificados' className="container section-container py-5 mt-3 border-top">
+        <div className="col-12 col-md-4 text-left mb-4">
+          <h1 className="mb-0">CERTIFICADOS.</h1>
+        </div>
+        <Certificates/>
+      </div>
+
 
 
       <div id="contacto" className="container section-container mt-5 border-top contacto-h">

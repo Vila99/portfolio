@@ -1,11 +1,11 @@
 import React from 'react';
 import ProjectCard from './Boxs'; // Asegúrate de que el nombre del archivo coincida
-import { SiHtml5, SiCss3, SiJavascript, SiReact } from 'react-icons/si';
+import { SiHtml5, SiCss3, SiJavascript, SiReact, SiBootstrap } from 'react-icons/si';
 
 const ProjectGallery = () => {
   return (
-    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '70px' }}>
-      <div>
+    <div className='row g-4' style={{ display: 'flex', flexWrap: 'wrap', gap: '70px' }}>
+      <div className='col-12 col-sm-6 col-lg-5'>
         <h4 className='pb-1 text-center'>FUT.SUPP</h4>
         <ProjectCard
           title="FUT.SUPP"
@@ -18,9 +18,26 @@ const ProjectGallery = () => {
           <SiCss3 className='btn-icon' style={{ fontSize: 35, color: '#fff' }} />
           <SiJavascript className='btn-icon' style={{ fontSize: 35, color: '#fff' }} />
           <SiReact className='btn-icon' style={{ fontSize: 35, color: '#fff' }} />
+          <SiBootstrap className='btn-icon' style={{ fontSize: 35, color: '#fff' }} />
         </div>
       </div>
       {/* Agrega más ProjectCard según sea necesario */}
+      <div className='col-12 col-sm-6 col-lg-5'>
+        <h4 className='pb-1 text-center'>MYAPP</h4>
+        <ProjectCard
+          title="MYAPP"
+          imageUrl="/myapp.png" // Ruta correcta desde la carpeta public
+          githubUrl="https://github.com/Vila99/myapp"
+          vercelUrl="https://myapp-v1gv.vercel.app"
+        />
+        <div className="flex space-x-10 mt-4 text-center justify-content-center" style={{display: 'flex', gap: '16px', flexWrap: 'wrap'}}>
+          <SiHtml5 className='btn-icon' style={{ fontSize: 35, color: '#fff'  }} />
+          <SiCss3 className='btn-icon' style={{ fontSize: 35, color: '#fff' }} />
+          <SiJavascript className='btn-icon' style={{ fontSize: 35, color: '#fff' }} />
+          <SiReact className='btn-icon' style={{ fontSize: 35, color: '#fff' }} />
+          <SiBootstrap className='btn-icon' style={{ fontSize: 35, color: '#fff' }} />
+        </div>
+      </div>
     </div>
   );
 };

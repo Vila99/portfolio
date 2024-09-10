@@ -3,6 +3,7 @@
 import { useEffect } from 'react';
 import SwitchClient from './SwitchClient';
 import Link from 'next/link';
+import {SiGithub, SiLinkedin} from 'react-icons/si';
 
 const Navbar = () => {
   useEffect(() => {
@@ -50,6 +51,16 @@ const Navbar = () => {
         <Link href="/" className="navbar-brand fs-3 text-white">
           ./GV2024
         </Link>
+        
+        <div>
+          <a href='https://github.com/Vila99' target='_blank' rel='noopener noreferrer'>
+            <SiGithub className='btn-icon' style={{ fontSize: 35, color: '#fff' }} />
+          </a>
+          <a href='https://www.linkedin.com/in/guillem-vila-pàmies-738518307/' target='_blank' rel='noopener noreferrer' className='ms-3'>
+            <SiLinkedin className='btn-icon' style={{ fontSize: 35, color: '#fff' }} />
+          </a>
+        </div>
+
         <button
           className="navbar-toggler"
           type="button"

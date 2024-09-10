@@ -51,7 +51,7 @@ const BootstrapStyledTimeline = () => {
             <div className="col-12 col-lg-6">
                 <div className="pt-5">
                     <h3 className='pb-2 fw-light'>¿Qué busco?</h3>
-                    <p className='pb-2 fw-light fs-5'>Tras completar cinco años de ADE en la Universitat de Barcelona, decidí enfocarme en programación y edición de contenidos, 
+                    <p className='pb-2 fw-light fs-5'>Tras realizar cinco años de ADE en la Universitat de Barcelona, decidí enfocarme en programación y edición de contenidos, 
                         áreas que se alinean más con mis intereses y hobbies. Actualmente, estoy a mitad de carrera y en búsqueda de mi primer trabajo 
                         como junior en el sector multimedia, donde veo más oportunidades y proyección profesional.</p>
                 </div>

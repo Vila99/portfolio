@@ -5,8 +5,8 @@ import EmailIcon from '@mui/icons-material/Email';
 
 const EmailContactForm = () => {
   const email = 'guillemvilapamies@gmail.com'; // Reemplaza con tu correo electrónico
-  const subject = 'Asunto del correo'; // Puedes personalizar el asunto
-  const body = 'Cuerpo del correo'; // Puedes personalizar el cuerpo del mensaje
+  const subject = ''; // Puedes personalizar el asunto
+  const body = ''; // Puedes personalizar el cuerpo del mensaje
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -15,7 +15,7 @@ const EmailContactForm = () => {
   };
 
   return (
-    <button className='btn-download' onClick={handleClick}>
+    <button className='btn-download mt-5' onClick={handleClick}>
       guillemvilapamies@gmail.com <EmailIcon className="btn-icon"/>
     </button>
   );
