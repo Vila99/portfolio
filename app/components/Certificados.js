@@ -32,6 +32,13 @@ const certificates = [
     issuer: "Mastermind",
     date: "2024",
     imageUrl: "/cnode.png"
+  },
+  {
+    id: 5,
+    title: "React y Next.js",
+    issuer: "Mastermind",
+    date: "2024",
+    imageUrl: "/creact.png"
   }
 ];
 
