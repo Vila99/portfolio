@@ -38,23 +38,6 @@ const ProjectGallery = () => {
           <SiTailwindcss className='btn-icon' style={{ fontSize: 35, color: '#fff' }} />
         </div>
         </div>
-              {/* Agrega más ProjectCard según sea necesario */}
-              <div className='col-12 col-sm-6 col-lg-5'>
-          <h4 className='pb-1 text-center'>MYAPP v.1</h4>
-          <ProjectCard
-            title="MYAPP"
-            imageUrl="/myapp.png" // Ruta correcta desde la carpeta public
-            githubUrl="https://github.com/Vila99/myapp"
-            vercelUrl="https://myapp-v1gv.vercel.app"
-          />
-          <div className="flex space-x-10 mt-4 text-center justify-content-center" style={{display: 'flex', gap: '16px', flexWrap: 'wrap'}}>
-            <SiHtml5 className='btn-icon' style={{ fontSize: 35, color: '#fff'  }} />
-            <SiCss3 className='btn-icon' style={{ fontSize: 35, color: '#fff' }} />
-            <SiJavascript className='btn-icon' style={{ fontSize: 35, color: '#fff' }} />
-            <SiReact className='btn-icon' style={{ fontSize: 35, color: '#fff' }} />
-            <SiBootstrap className='btn-icon' style={{ fontSize: 35, color: '#fff' }} />
-          </div>
-        </div>
     </div>
   );
 };
